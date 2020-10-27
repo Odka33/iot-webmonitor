@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+	<nav class="navbar" role="navigation" aria-label="main navigation">
+        <br>
+  <div class="navbar-brand">
+    <h1 class="title is-1">WebMonitor</h1>
+  </div>
+  <div class="navbar-menu">
+    <!-- navbar start, navbar end -->
+
+    <p class="navbar-end subtitle is-3">Sponsored by Odka33</p>
+  </div>
+</nav>
+
+        <title>{% block titre %}Titre par défaut{% endblock %}</title>
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+
+    </body>
+</html>
+

@@ -1,0 +1,44 @@
+html{
+	background-color: #0ba360;
+	width: 100%;
+}
+
+#fL100{
+    display: flex;
+    justify-content: center;
+
+}
+#fA100{
+	display: flex;
+	justify-content: center;
+}
+#fA200{
+	display: flex;
+	justify-content: center;
+}
+
+#FP100{
+	display: flex;
+	flex-direction: row;
+}
+#FP200{
+	margin-left: 20px;
+	margin-right: 1050px;
+	border: outset 7px whitesmoke;
+}
+table, th, td {
+    border: 3.5px solid black;
+    border-collapse: collapse;
+
+}
+table{
+	width: 80%;
+	border: outset 7px whitesmoke;
+	color: white;
+}
+
+fieldset{
+	border: outset 7px whitesmoke;
+
+}
+

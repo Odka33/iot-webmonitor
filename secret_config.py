@@ -1,0 +1,5 @@
+SECRET_KEY = 'AdkP92njaà9!'
+DATABASE_HOST = 'localhost'
+DATABASE_USER = 'root'
+DATABASE_PASSWORD = 'password'
+DATABASE_NAME = 'cours_iot'

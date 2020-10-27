@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block titre %}
+    Administration
+{% endblock %}
+
+{% block nav %}
+
+<nav class="navbar navbar-light bg-green">
+  <span class="navbar-brand mb-0 h1">Python Monitor</span>
+</nav>
+
+{% endblock %} 
+
+{% block body %}
+    <h1>Administration</h1>
+    <p>Bienvenue sur l'administration !</p>
+
+    <form action="" method="POST">
+        <fieldset>
+            <label for="name">Name :</label><br/>
+            <input type="text" name="name" id="name" /><br/><br/>
+
+            <label for="url">URL :</label><br/>
+            <input type="text" name="url" id="url" /><br/><br/>
+
+            <input type="submit" value="Connecter"/>
+        </fieldset>
+    </form>
+
+    {% if website %}
+        {% for (id, url, name, timestamp) in website %}
+        <p>{{ url }}</p>
+        {% endfor %}
+    {% endif %}
+
+    <a href="{{ url_for('admin_logout') }}">Déconnexion</a>
+{% endblock %}
+

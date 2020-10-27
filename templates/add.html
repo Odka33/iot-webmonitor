@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block titre %}
+    Add Url
+{% endblock %}
+
+{% block body %}
+<hr>
+    <br>
+    <form action="" method="POST" id="fA100">
+        <fieldset>
+            <div id="fA200">
+        <strong><h2 class="title is-3">Add Url:</h2></strong>
+    </div>
+            <hr>
+            <label for="name">Name :</label>
+            <div class="control">
+            <input type="text" class="input" name="name" id="name" /></div><br/><br/>
+            <label for="url">URL :</label><br/>
+            <div class="control">
+            <input type="text" class="input" name="url" id="url" /></div><br/><br/>
+            <input type="submit" value="Add" class="button is-success is-inverted"/>
+            <a class="button is-success is-inverted" href="{{ url_for('admin_logout') }}">Logout</a>
+        </fieldset>
+    </form>
+    {% if website %}
+        {% for (id, name, url, timestamp) in websites %}
+        <div class="column">{{ name, url, code}}</div>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
+

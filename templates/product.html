@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block titre %}
+    Product
+{% endblock %}
+
+
+{% block body %}
+    <br>
+    <hr>
+    <h2 class="title is-3" id="FP200">WebPanel</h2>
+    <div id="FP100">
+    <div class="column is-mobile">
+    <table>
+    <tr>
+        <td>Title</td>
+        <td>Url</td>
+        <td>Status</td>
+    </tr>
+    {% if websites %}
+        {% for website in websites %}
+            <tr>
+            <td>{{ website[1] }}</td>
+                <td>{{ website[2] }}</td>
+            <td>{{ website[3] }}</td>
+            </tr>
+        {% endfor %}
+    {% endif %}
+    </table>
+
+
+</div>
+</div>
+
+{% endblock %}   
